@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αποφρακτική «Express» Ioannina | Αποφράξεις Ιωάννινα</title>
+    <!-- Tailwind CSS για σύγχρονο design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome για τα εικονίδια -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 scroll-smooth">
+
+    <!-- NAVIGATION BAR -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-blue-600 text-white p-2 rounded-full">
+                    <i class="fa-solid fa-droplet text-xl"></i>
+                </div>
+                <span class="font-bold text-lg sm:text-xl">Αποφρακτική <span class="text-blue-600">«Express»</span> Ioannina</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#services" class="hover:text-blue-600 transition">Υπηρεσίες</a>
+                <a href="#why-us" class="hover:text-blue-600 transition">Γιατί εμάς</a>
+                <a href="#equipment" class="hover:text-blue-600 transition">Έργα</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Επικοινωνία</a>
+            </nav>
+            <div>
+                <a href="tel:6994373070" class="bg-red-500 hover:bg-red-600 text-white px-5 py-2.5 rounded-full font-semibold flex items-center space-x-2 transition shadow-md">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Καλέστε τώρα</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="inline-block bg-red-100 text-red-600 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                <i class="fa-solid fa-circle text-[8px] mr-1 align-middle animate-pulse"></i> 24/7 Αμεση Επέμβαση
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight mb-6">
+                Αποφράξεις στα <span class="text-blue-600">Ιωάννινα</span>, όποτε τις χρειαστείτε.
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Αποφρακτική «Express» — γρήγορη, καθαρή και υπεύθυνη δουλειά με σύγχρονο εξοπλισμό υψηλής πίεσης. <strong class="text-gray-900">Εγγύηση στην τιμή</strong> και εξυπηρέτηση όλο το 24ωρο.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 mb-8">
+                <a href="tel:6994373070" class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-2xl font-bold text-center text-lg shadow-lg shadow-red-200 transition">
+                    <i class="fa-solid fa-phone mr-2"></i> 6994373070
+                </a>
+                <a href="#contact" class="border border-gray-300 hover:border-gray-400 bg-white text-gray-700 px-8 py-4 rounded-2xl font-bold text-center text-lg transition flex items-center justify-center space-x-2">
+                    <span>Ζητήστε προσφορά</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-3 gap-2 pt-4 border-t border-gray-200 text-sm font-medium text-gray-600">
+                <div class="flex items-center space-x-1.5"><i class="fa-regular fa-circle-check text-blue-600"></i> <span>Άμεση άφιξη</span></div>
+                <div class="flex items-center space-x-1.5"><i class="fa-regular fa-circle-check text-blue-600"></i> <span>Καθαρή εργασία</span></div>
+                <div class="flex items-center space-x-1.5"><i class="fa-regular fa-circle-check text-blue-600"></i> <span>Προσιτές τιμές</span></div>
+            </div>
+        </div>
+        <div class="relative">
+            <!-- Αντικατάστησε το van.jpg με το όνομα της εικόνας του βαν σου -->
+            <img src="van.jpg" alt="Αποφρακτική Express Βαν" class="rounded-3xl shadow-xl w-full object-cover aspect-[4/3]">
+            <div class="absolute bottom-4 left-4 bg-white p-4 rounded-2xl shadow-lg flex items-center space-x-3">
+                <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i class="fa-regular fa-clock text-xl"></i></div>
+                <div>
+                    <h4 class="font-bold text-gray-900">24/7</h4>
+                    <p class="text-xs text-gray-500">Διαθέσιμοι πάντα</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="bg-white py-16 md:py-24 border-t border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span class="text-blue-600 font-bold uppercase tracking-wider text-xs block mb-2">Οι υπηρεσίες μας</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-950 mb-12">Λύνουμε κάθε είδους απόφραξη</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Κεντρικού Δικτύου -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center mb-5 shadow-md shadow-blue-100">
+                        <i class="fa-solid fa-water text-lg"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Κεντρικού Δικτύου</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Αποφράξεις κεντρικών αγωγών & φρεατίων με υδροπίεση.</p>
+                </div>
+                <!-- Κουζίνες - Λεκάνες -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center mb-5 shadow-md shadow-blue-100">
+                        <i class="fa-solid fa-toilet text-lg"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Κουζίνες • Λεκάνες • WC</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Άμεση αποκατάσταση σε τουαλέτες, νιπτήρες και νεροχύτες.</p>
+                </div>
+                <!-- Σιφώνια Δαπέδου -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center mb-5 shadow-md shadow-blue-100">
+                        <i class="fa-solid fa-soap text-lg"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Σιφώνια Δαπέδου</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Καθαρισμός σιφωνιών μπάνιου, μπαλκονιού και δαπέδου.</p>
+                </div>
+                <!-- Υδρορροές -->
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 hover:shadow-md transition">
+                    <div class="bg-blue-600 text-white w-12 h-12 rounded-xl flex items-center justify-center mb-5 shadow-md shadow-blue-100">
+                        <i class="fa-solid fa-cloud-showers-heavy text-lg"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Υδρορροές</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Ξεβούλωμα υδρορροών, ταρατσών και εξωτερικών σωληνώσεων.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section id="why-us" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-slate-950 text-white rounded-3xl p-8 md:p-12 shadow-xl">
+            <span class="text-blue-400 font-bold uppercase tracking-wider text-xs block mb-2">Γιατί εμάς</span>
+            <h2 class="text-3xl font-bold mb-10">Επαγγελματίες που εμπιστεύεστε</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fa-regular fa-clock text-blue-500 text-2xl mb-4 block"></i>
+                    <h4 class="font-bold text-base mb-2">24/7 Διαθεσιμότητα</h4>
+                    <p class="text-slate-400 text-sm">Είμαστε δίπλα σας κάθε μέρα, όλο το 24ωρο — ακόμη και αργίες.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-euro-sign text-blue-500 text-2xl mb-4 block"></i>
+                    <h4 class="font-bold text-base mb-2">Εγγύηση στην Τιμή</h4>
+                    <p class="text-slate-400 text-sm">Ξεκάθαρη τιμή από την αρχή, χωρίς κρυφές χρεώσεις.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fa-regular fa-shield-check text-blue-500 text-2xl mb-4 block"></i>
+                    <h4 class="font-bold text-base mb-2">Άμεση Εξυπηρέτηση</h4>
+                    <p class="text-slate-400 text-sm">Φτάνουμε γρήγορα σε όλη την περιοχή των Ιωαννίνων.</p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-screwdriver-wrench text-blue-500 text-2xl mb-4 block"></i>
+                    <h4 class="font-bold text-base mb-2">Έμπειρο Συνεργείο</h4>
+                    <p class="text-slate-400 text-sm">Σύγχρονος εξοπλισμός υψηλής πίεσης & εξειδικευμένα μηχανήματα.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPMENT GALLERY SECTION -->
+    <section id="equipment" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <span class="text-blue-600 font-bold uppercase tracking-wider text-xs block mb-2">Ο εξοπλισμός μας</span>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Σύγχρονα μέσα, αξιόπιστο συνεργείο</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Αντικατάστησε τα src με τα δικά σου αρχεία εικόνων -->
+            <img src="img1.jpg" alt="Εξοπλισμός 1" class="rounded-2xl shadow-sm hover:shadow-md transition object-cover w-full h-64">
+            <img src="img2.jpg" alt="Εξοπλισμός 2" class="rounded-2xl shadow-sm hover:shadow-md transition object-cover w-full h-64">
+            <img src="img3.jpg" alt="Εξοπλισμός 3" class="rounded-2xl shadow-sm hover:shadow-md transition object-cover w-full h-64">
+            <img src="img4.jpg" alt="Εξοπλισμός 4" class="rounded-2xl shadow-sm hover:shadow-md transition object-cover w-full h-64">
+            <img src="img5.jpg" alt="Εξοπλισμός 5" class="rounded-2xl shadow-sm hover:shadow-md transition object-cover w-full h-64">
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-12 gap-8 items-start">
+        <!-- Στοιχεία Επικοινωνίας -->
+        <div class="md:col-span-5 space-y-4">
+            <span class="text-blue-600 font-bold uppercase tracking-wider text-xs block">Επικοινωνία</span>
+            <h2 class="text-3xl font-bold text-gray-900">Καλέστε μας τώρα</h2>
+            <p class="text-gray-500 mb-6">Άμεση εξυπηρέτηση σε Ιωάννινα και γύρω περιοχές, όλο το 24ωρο.</p>
+            
+            <!-- Τηλέφωνο 1 -->
+            <a href="tel:6994373070" class="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 hover:shadow-sm transition">
+                <div class="bg-red-50 text-red-500 p-3 rounded-xl"><i class="fa-solid fa-phone text-lg"></i></div>
+                <div>
+                    <p class="text-xs text-gray-400">Τηλέφωνο</p>
+                    <p class="font-bold text-gray-900">6994373070</p>
+                </div>
+            </a>
+            <!-- Τηλέφωνο 2 -->
+            <a href="tel:6946100278" class="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 hover:shadow-sm transition">
+                <div class="bg-red-50 text-red-500 p-3 rounded-xl"><i class="fa-solid fa-phone text-lg"></i></div>
+                <div>
+                    <p class="text-xs text-gray-400">Τηλέφωνο</p>
+                    <p class="font-bold text-gray-900">6946100278</p>
+                </div>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/306994373070" target="_blank" class="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 hover:shadow-sm transition">
+                <div class="bg-green-50 text-green-500 p-3 rounded-xl"><i class="fa-brands fa-whatsapp text-xl"></i></div>
+                <div>
+                    <p class="text-xs text-gray-400">WhatsApp</p>
+                    <p class="font-bold text-gray-950">Στείλτε μήνυμα</p>
+                </div>
+            </a>
+            <!-- Email -->
+            <a href="mailto:teogiannena61@hotmail.com" class="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100 hover:shadow-sm transition">
+                <div class="bg-blue-50 text-blue-500 p-3 rounded-xl"><i class="fa-regular fa-envelope text-lg"></i></div>
+                <div>
+                    <p class="text-xs text-gray-400">Email</p>
+                    <p class="font-bold text-gray-900">teogiannena61@hotmail.com</p>
+                </div>
+            </a>
+            <!-- Περιοχή -->
+            <div class="flex items-center space-x-4 bg-white p-4 rounded-2xl border border-gray-100">
+                <div class="bg-gray-50 text-gray-500 p-3 rounded-xl"><i class="fa-solid fa-location-dot text-lg"></i></div>
+                <div>
+                    <p class="text-xs text-gray-400">Περιοχή</p>
+                    <p class="font-bold text-gray-900">Ιωάννινα & γύρω περιοχές</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Φόρμα Επικοινωνίας -->
+        <div class="md:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-gray-100 shadow-sm">
+            <h3 class="font-bold text-xl mb-1">Ζητήστε προσφορά</h3>
+            <p class="text-gray-400 text-sm mb-6">Συμπληρώστε τη φόρμα και θα σας καλέσουμε.</p>
+            
+            <!-- Σημείωση: Για να λειτουργεί η φόρμα δωρεάν χωρίς backend, χρησιμοποιούμε το Formspree (χρειάζεται απλό registration) -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Ονοματεπώνυμο *</label>
+                    <input type="text" name="name" required placeholder="Το όνομά σας" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Τηλέφωνο *</label>
+                    <input type="tel" name="phone" required placeholder="π.χ. 69XXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Email (προαιρετικό)</label>
+                    <input type="email" name="email" placeholder="email@example.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-gray-700 mb-1">Το πρόβλημά σας *</label>
+                    <textarea name="message" rows="4" required placeholder="Περιγράψτε σύντομα την απόφραξη..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-xl shadow-md transition">
+                    Αποστολή αιτήματος
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 text-center text-sm">
+        <p>&copy; 2026 Αποφρακτική «Express» Ioannina. Με επιφύλαξη παντός δικαιώματος.</p>
+    </footer>
+
+</body>
+</html>
